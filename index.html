@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Pelo Mundo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aventura Pelo Mundo</h1>
+    </header>
+    <main class="container">
+        <section class="story">
+            <img src="caminho/para/rio.jpg" alt="Ponto turístico famoso">
+            <p>Você está embarcando em uma jornada global para identificar pontos turísticos famosos. Boa sorte!</p>
+        </section>
+        <section class="quiz">
+            <form id="quiz-form">
+                <div id="question-container"></div>
+                <button type="button" onclick="checkAnswer()">Responder</button>
+            </form>
+            <p id="result"></p>
+            <button id="next-button" onclick="nextQuestion()" style="display: none;">Próxima Pergunta</button>
+            <button id="retry-button" onclick="retryQuestion()" style="display: none;">Tentar Novamente</button>
+        </section>
+    </main>
+    <footer>
+        <p>2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
